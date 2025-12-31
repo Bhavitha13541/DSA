@@ -31,3 +31,4 @@ print("Largest element is : ", max_element)
 # output:   
 # Smallest element is :  12
 # Largest element is :  90
+# time complexity: O(n)
