@@ -28,7 +28,23 @@ max_element = max(arr)
 print("Smallest element is : ", min_element)
 print("Largest element is : ", max_element)
 
-# output:   
-# Smallest element is :  12
-# Largest element is :  90
-# time complexity: O(n)
+output:   
+Smallest element is :  12
+Largest element is :  90
+time complexity: O(n)
+
+
+
+# Linear Search
+
+def smallest_element(nums, target):
+    for i in range(len(nums)):
+        if nums[i] == target:
+            return i
+    return -1
+
+nums = [4, 2, 3, 3, 5]
+target = 3
+print("The element 3 found at smallest index of: ",smallest_element(nums, target))
+
+# output: The element 3 found at smallest index of:  2
