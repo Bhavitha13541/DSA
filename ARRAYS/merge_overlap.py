@@ -7,3 +7,6 @@ for i in intervals:
     else:
         merged[-1][1] = max(merged[-1][1], i[1])
 print(merged)
+
+# output:
+# [[1, 6], [8, 11], [15, 18]]
