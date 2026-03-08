@@ -17,7 +17,7 @@ print(max_product(nums))
 
 # output: 6
 
-# optimal solution
+# optimal solution 1
 nums = [2,3,0,-2,4,1]
 def maxProduct(nums):
         max_p = nums[0]
@@ -33,5 +33,23 @@ def maxProduct(nums):
                 res = temp
         return res
 print(maxProduct(nums))
+
+# output: 6
+
+# OPTIMAL SOLUTION 2
+nums = [2,3,-2,-5,0,4,1]
+def max_product(nums):
+    left_p = 1
+    right_p = 1
+    res = nums[0]
+    for i in range(len(nums)):
+        if left_p == 0:
+               left_p = 1
+        if right_p == 0:
+             right_p = 1
+        left_p *= nums[i]
+        right_p *= nums[len(nums) - i - 1]
+        res = max(res, left_p, right_p)
+    return res
 
 # output: 6
