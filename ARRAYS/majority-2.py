@@ -12,6 +12,9 @@ for num in F:
         L.append(num)
 
 print(L)
+
+# output:
+# [1, 2]
         
 
 # output:
